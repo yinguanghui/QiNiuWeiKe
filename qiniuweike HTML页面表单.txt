@@ -1,0 +1,52 @@
+advertisement 分类→广告
+
+article-view 文章（自己）
+
+classification 分类
+
+confirm-order 确认订单
+
+copartner 合伙人
+
+friends 邀请好友
+
+goods  商品（自己）
+
+Income detail  收益明细
+
+index 主页
+
+loadmore-article 下拉加载（文章）
+
+loadmore-goods  下拉加载（商品）
+
+money  兑换明细
+
+my-shoppingcar  我的购物车
+
+order-details.html 订单详情
+
+personal-center-all 全部订单
+
+personal-center-callback 退货退款
+
+personal-center-unpaid 待付款
+
+personal-center-unchecked 待收货
+
+personal-center-checked  已完成
+
+ranking List  排行榜
+
+rebate 商品返利
+
+school  学堂
+
+share-artical  文章（分享）
+
+share-goods 商品（分享）
+
+task  任务
+
+
+

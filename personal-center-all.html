@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>奇牛微客</title>
+    <link rel="stylesheet" type="text/css" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/my-shoppingcar.css">
+    <style>
+        section{           
+            padding-bottom: 80px;
+        }
+    </style>
+    </head>
+    <body>
+    	<header>
+             <div class="back fl" onclick="history.back()">
+             <img src="img/goods1/back.png">
+             </div>
+             <div class="title fl">个人中心</div>
+             <div class="home fr" data-href="index.html"><img src="img/goods1/home.png"></div>   
+        </header>
+        <section>
+            <div class="userpage">
+                <img src="img/goods1/sky.png" alt="sky">
+                <div >
+                    <img src="img/cat.png" alt="user">
+                    <p>咣咣</p>
+                </div>
+            </div>
+            <ul class="ui-tiled">
+                <li data-href="personal-center-all.html">
+                    <div class="active"><i class="quantity"></i></div>
+                    <p style="color:#000;">全部订单</p>
+                </li>
+                <li data-href="personal-center-unpaid.html">
+                    <div><i class="quantity"></i></div>
+                    <p>待付款</p>
+                </li>
+                <li data-href="personal-center-unchecked.html">
+                    <div><i class="quantity"></i></div>
+                    <p>待收货</p>
+                </li>
+                <li data-href="personal-center-checked.html">
+                    <div><i class="quantity"></i></div>
+                    <p>已完成</p>
+                </li>
+                <li data-href="personal-center-callback.html">
+                    <div><i class="quantity"></i></div>
+                    <p>退货退款</p>
+                </li>
+            </ul>
+            <div class="gap"></div>
+            <div class="dingdan"><img src="img/goods1/dingdan.png" />最新订单</div>
+            <ul class="newlist">
+                <li>
+                    <div class="listnum">订单号NO20124129857219857123857</div>
+                    <div class="anglelink" data-href="order-details.html">
+                        <img src="img/goods1/hongzaogoods1.png"/>
+                        <p>【枣核之恋】红枣夹核桃年货大礼包优惠全放送！</p>
+                        <h6>数量：<i>1</i></h6>
+                        <span>￥168</span>
+                    </div>
+                    <div class="summary">
+                        <p>共<span>1</span>件商品 总价：￥<i>168</i><p>
+                    </div>
+                    <div class="fukuan">
+                        <button class="btn7">取消订单</button>
+                        <button class="btn6">付款</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="listnum">订单号NO20124129857219857123857</div>
+                    <div class="anglelink" data-href="order-details.html">
+                        <img src="img/goods1/hongzaogoods1.png"/>
+                        <p>【枣核之恋】红枣夹核桃年货大礼包优惠全放送！</p>
+                        <h6>数量：<i>1</i></h6>
+                        <span>￥168</span>
+                    </div>
+                    <div class="summary">
+                        <p>共<span>1</span>件商品 总价：￥<i>168</i><p>
+                    </div>
+                    <div class="fukuan">
+                        <button class="btn7">取消订单</button>
+                        <button class="btn6">付款</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="nothinglist">您目前尚未有任何订单！</p>
+            <div class="support">技术支持：&nbsp&nbsp&nbsp&nbsp<img src="img/goods1/mark.png" />奇牛电商</div>
+        </section>
+
+        <footer>
+            <ul class="ui-tiled">
+                <li data-href="index.html">
+                    <div></div>
+                    <p>首页</p>
+                </li>
+                <li data-href="classification.html">
+                    <div></div>
+                    <p>分类</p>
+                </li>
+                <li data-href="my-shoppingcar.html">
+                    <div></div>
+                    <p>购物车</p>
+                </li>
+                <li data-href="personal-center-all.html">
+                    <div></div>
+                    <p>个人中心</p>
+                </li>
+            </ul>
+        </footer>
+        <div id="readytobuy">
+            <p>您确定清空购物车吗？</p>
+            <button class="btn5">确定</button>
+            <button class="btn4">取消</button>
+        </div>
+        <div class="dark"></div>
+       
+    </body>
+    <script type="text/javascript">
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function(){
+                FastClick.attach(document.body);
+            }, false);
+        }
+    </script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/myjs-goods.js"></script>
+    <script>
+        $('.ui-tiled li, .home, .anglelink').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+    </script>
+</html>

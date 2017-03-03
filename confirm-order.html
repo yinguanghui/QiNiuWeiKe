@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1.0,  user-scalable=0" name="viewport" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>确认订单</title>
+        <link rel="stylesheet" href="css/frozen.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/icon-full.css">
+    </head>
+     <body class="order-section">
+        <header class="ui-header ui-header-position ui-border-b f-black bg-w">
+        <div class="Relative">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>确认订单</h1>
+        </div>
+        </header>
+        <footer class="ui-footer ui-footer-stable ui-border-t" style="height:5rem;">
+            <div class=" Relative">
+                <div class="total-money">
+                    <h1 class="f-black">总金额：<span class="order-goods-money">￥168.00</span></h1>
+                </div>
+                <div class="order-btn">
+                    <a href="#">确认</a>
+                </div>
+            </div>
+        </footer>
+        <section class='ui-container'>
+            <div class="order-content">
+                <div class="order-address bg-w">
+                    <h2 class="ui-border-b f-black">收货信息</h2>
+                    <div class="order-user">
+                        <h3 class="f-black">傻傻智者&nbsp;&nbsp;<span>18200364578</span></h3>
+                        <h2><span>湖南省</span>/<span>长沙市</span>/<span>芙蓉区</span>&nbsp;&nbsp;<span>这是详细的街道信息非常详细非常详细</span>
+                    </div>
+                </div>
+                <div class="order-address bg-w">
+                    <h2 class="ui-border-b f-black">商品详情</h2>
+                    <div class="order-goods Relative">
+                        <img src="img/goods1/order-goods.png">
+                        <div class="goods-address">
+                            <h2 class="f-black ui-nowrap-flex">【枣核之恋】红枣夹核桃大礼包，美味营养</h2>
+                            <p>"净含量":"1KG"</p>
+                            <p>数量:<span class="order-plus minuss">-</span><span class="goods-num">1</span><span class="order-plus pluss">+</span></p>
+                            <p><span class="order-goods-money">￥168</span><span class="f12"><del>原价￥<i>198<i>元</del></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-address bg-w ui-arrowlink rotate90">
+                    <h2>配送方式:<span class="f-black">快递（包邮）</span></h2>
+                </div>
+                <div class="order-address bg-w">
+                    <h2 class="ui-border-b f-black">支付方式</h2>
+                    <div class="order-pay-way">
+                    <h2><img src="img/goods1/radio-checked.png">
+                    <img src="img/goods1/weixin.png">&nbsp;&nbsp;<span>微支付</span></h2>
+                    </div>
+                </div>
+                <div class="order-address bg-w">
+                    <h2 class="ui-border-b f-black">收货时间</h2>
+                    <div class="send-time">
+                        <h2 class="ui-border-b">
+                            <input type="radio" checked="checked" id="send-way1" name="send-way" value="">
+                            <label for="send-way1" class="checked" name="send-way1">送货时间不限</label>
+                        </h2>
+                        <h2 class="ui-border-b">
+                            <input type="radio" id="send-way2" name="send-way" value="">
+                            <label for="send-way2"  name="send-way2">只双休日/节假日送货</label>
+                        </h2>
+                        <h2>
+                            <input type="radio" id="send-way3" name="send-way" value="">
+                            <label for="send-way3"  name="send-way3">只工作日(双休日/节假日不用送)</label>
+                        </h2>
+                    </div>
+                </div>
+                <div class="order-address bg-w">
+                    <h2 class="order-phone"><img src="img/goods1/order-phone.png">客服电话<span>1234567</span></h2>
+                </div>
+                <div class="order-address bg-w">
+                    <h1 class="order-message"><textarea name="" placeholder="给卖家留言..."></textarea></h1>
+                </div>
+                <h3 class="order-footer">技术支持：<img src="img/goods1/zhichi2.png" style="vertical-align:middle;">奇牛微客</h3>
+            </div>
+            <div class="dark"></div>
+            <div class="express">
+                <p class="activeup">快递（包邮）</p>
+                <p>EMS（包邮）</p>
+            </div>
+        </section>
+        <script type="text/javascript">
+            if ('addEventListener' in document) {
+                document.addEventListener('DOMContentLoaded', function(){
+                    FastClick.attach(document.body);
+                }, false);
+            }
+        </script>
+        <script src="js/fastclick.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myjs-goods.js"></script>
+        </body>
+</html>

@@ -1,0 +1,538 @@
+@charset "UTF-8";
+*{ margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 12px;
+}
+@media screen and (min-width: 386px) and (max-width:420px)  {
+    .goods-title{
+        width: 22rem;
+        font-size: 1.3rem;
+
+    }
+}
+@media screen and (min-width: 365px) and (max-width:385px)  {
+    .goods-title{
+        width: 20rem;
+        font-size: 1.3rem;
+
+    }
+} 
+@media screen and (min-width: 321px) and (max-width:364px)  {
+    .goods-title{
+        width: 18rem;
+        font-size: 1.3rem;
+
+    }
+} 
+
+@media screen and (max-width:321px){
+    .goods-title{
+        width: 16rem;
+        font-size: 1.2rem;    
+    }
+}
+
+body{
+	font-family: "微软雅黑";
+	font-size:100%;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.ib{
+	display:inline-block;
+	 }
+
+header{
+	position: fixed;
+ 	width: 100%;
+  	z-index: 100;
+ 	left: 0;
+ 	top: 0;
+ 	height: 4rem;
+ 	line-height: 4em;
+ 	background: #dedede;
+}
+
+section{
+	margin-top: 4rem;
+    padding-bottom: 9.5rem;
+}
+
+.back {
+    width: 4rem;
+    height: 4rem;
+    background: #c8c8c8;
+}
+
+.back>img {
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    margin: 1rem 0 0 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #5F5F5F;
+    text-align: center;
+    position: absolute;
+    left: 37%;
+}
+
+.home {
+    width: 4rem;
+    height: 4rem;
+    background: #c8c8c8;
+}
+
+.home img {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0 0 1rem;
+}
+
+.goods-title{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    float: left;
+    margin-top: 0.9rem;
+}
+
+.goodslist li{
+    overflow: hidden;
+    position: relative;
+}
+
+.goodslist li>img{
+    width: 7.2rem;
+    margin:0.9rem 0.9rem 0.9rem 0;
+    float: left;
+}
+
+.goodslist li span{
+    font-size: 1.25rem; 
+    color: #ff4941;
+    font-weight: bold;  
+}
+
+.goodslist li{
+    border-bottom: 1px solid #8f8f8f;
+    margin: 0 1rem;
+}
+
+.goodslist button{
+    width: 2.6rem;
+    height: 1.9rem;
+    border: 1px solid #acacac;
+}
+
+.goodslist div div{
+    position: absolute;
+    right: 0.6rem;
+    top: 1.4rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000;
+}
+
+.goodslist div div img{
+    width: 160%;
+    position: absolute;
+    top: -0.55rem;
+    left: -0.1rem;
+}
+
+footer{
+    position: fixed;
+    height: 3.7rem;
+    background: #f0f0f0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+}
+footer .ui-tiled div{
+    margin-top: 0.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+footer .ui-tiled li:nth-of-type(1) div{
+   background: url(../img/goods1/iconfont_01.png) no-repeat;
+   background-size: cover;
+}
+footer .ui-tiled li:nth-of-type(2) div{
+   background: url(../img/goods1/iconfont_02.png) no-repeat;
+   background-size: cover;
+}
+footer .ui-tiled li:nth-of-type(3) div{
+   background: url(../img/goods1/iconfont_04.png) no-repeat;
+   background-size: cover;
+}
+footer .ui-tiled li:nth-of-type(4) div{
+   background: url(../img/goods1/iconfont_03.png) no-repeat;
+   background-size: cover;
+}
+footer .ui-tiled p{
+    margin-top: -0.1rem;
+}
+.settlement{
+    position: fixed;
+    height: 8.4rem;
+    background: #fdf171;
+    bottom: 0;
+    width: 100%;
+}
+
+.settlement span img{
+    width: 1.7rem;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.settlement>span{
+    display: inline-block;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    font-size: 0.9rem;
+    width: 4rem;
+    line-height: 3rem;
+    text-indent: 2rem;
+}
+
+.goclean{
+    margin-top: 0.8rem;
+}
+
+.goclean span{
+    position: absolute;
+    top: 2.4rem;
+    right: 1.5rem;
+}
+
+.goclean p{
+    float: left;
+    font-size: 0.9rem;    
+}
+
+.goclean i{
+    float: left;
+    color: #ff4941;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.goclean button{
+    margin-left: 0.9rem;
+    margin-top: -0.2rem;
+    float: left;
+    width: 3.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 2.2rem;
+    background:#f13e00;
+    border-radius: 5px;
+}
+
+.goclean div{
+    float: left;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000;
+    margin: 0.4rem 1.8rem 0 1rem;
+    position: relative;
+}
+
+.goclean div img{
+    width: 160%;
+    position: absolute;
+    top: -0.55rem;
+    left: -0.1rem;
+}
+
+#readytobuy{
+    width: 65%;
+    height: 18%;
+    background: rgba(0,0,0,0.85);
+    position: fixed;
+    bottom: 36%;
+    margin:0 auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 11px 2.5px #393939;
+    z-index: 101;
+    display: none;
+}
+
+#readytobuy button{
+    background: #ff6000;
+    width: 40%;
+    line-height: 2.6rem;
+    color: #fff;
+    font-size: 1.45rem;
+    border-radius: 4px;
+}
+
+#readytobuy p{
+    padding: 7% 0;
+    font-size: 1.3rem;
+}
+
+.dark {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    z-index: 100;
+    bottom: 0;
+    display: none;
+}
+
+.empty{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 6rem;
+    display: none;
+}
+
+.userpage{
+    height: 6.5rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.userpage img{
+    width: 100%;
+    background-size: cover;
+}
+
+.userpage div{
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    left: 8%;
+    z-index: 10;
+    top: 0;
+    margin-top: 1rem;
+}
+
+.userpage div p{
+    position: absolute;
+    left: 130%;
+    width: 8rem;
+    font-size: 1.4rem;
+    top: 20%;    
+}
+
+section .ui-tiled{
+    height: 5.2rem;
+    border-top: 1px solid #dbdbdb;
+    background: #f0f0f0;
+}
+
+section .ui-tiled div{
+    width: 2.1rem;
+    height: 2.7rem;
+    overflow: visible;
+    background: url('../img/goods1/dingdangrey.png') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.quantity{
+    height: 1.3rem;
+    width: 1.3rem;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.3rem;
+    color: #fff;
+    right: -0.5rem;
+    top: -0.15rem;
+    display: none;
+}
+
+section .ui-tiled p{
+    color: #979696;
+    font-size: 1.15rem;
+}
+
+section .ui-tiled li .active{
+    background: url('../img/goods1/dingdanblack.png') no-repeat;    
+    background-size: cover;
+}
+
+section .ui-tiled li:nth-of-type(1) div{
+    background-position: 0 6px;
+}
+
+section .ui-tiled li:nth-of-type(2) div{
+    background-position: 0 -26px;
+}
+section .ui-tiled li:nth-of-type(3) div{
+    background-position: 0 -62px;
+}
+section .ui-tiled li:nth-of-type(4) div{
+    background-position: 0 -98px;
+}
+section .ui-tiled li:nth-of-type(5) div{
+    background-position: 0 -138px;
+}
+
+.gap{
+    background: #eaeaea;
+    height: 1rem;
+}
+
+.dingdan{
+    height: 2.4rem;
+    text-indent: 1.3rem;
+    line-height: 2.4rem;
+    font-size: 1.15rem;
+}
+
+.dingdan img{
+    width: 1.5rem;
+    position: relative;
+    top: 0.3rem; 
+}
+
+.listnum{
+    line-height: 1.6rem;
+    background: #eaeaea;
+    text-indent: 1.3rem;
+    font-size: 0.9rem;
+    padding: 0.2rem 0;
+}
+
+.anglelink{
+    position: relative;
+    height: 9rem;
+    margin: 0 1rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.anglelink img{
+    width: 6.8rem;
+    float: left;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.anglelink:after {
+    font-family: iconfont!important;
+    font-size: 32px;
+    line-height: 1rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    display: block;
+    color: rgba(0,0,0,.5);
+    color: #c7c7c7;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+
+}
+
+.anglelink p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 1rem 2rem 0 0;
+    font-size: 1.25rem;
+}
+
+
+.anglelink span{
+    display: block;
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.summary{
+    line-height: 3rem;
+    border-bottom: 1px solid #dbdbdb;
+    margin:0 1rem;
+    overflow: hidden;
+}
+
+.summary p{
+    float: right;
+    margin-right: 1rem;
+}
+
+.summary span{
+    font-weight: bold;
+}
+
+.summary i{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.fukuan{
+    height: 5rem;
+    line-height: 5rem;
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.fukuan button{
+    float: right;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.btn6{
+    border: 1px solid red;
+    margin-right: 1rem;
+    color: red;
+}
+.btn7{
+    border: 1px solid #000;
+}
+
+.support{
+    position: absolute;
+    height: 3rem;
+    text-align: center;
+    color: #515151;
+    width: 100%;
+    line-height: 3rem;
+    background: #eaeaea;
+}
+
+.support img{
+    height: 1.2rem;
+    width: 1.2rem;
+    position: absolute;
+    left: 49%;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    padding-right: 1rem;
+}
+
+.nothinglist{
+    line-height: 10rem;
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+}
